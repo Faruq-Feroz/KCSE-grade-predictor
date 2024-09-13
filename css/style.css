@@ -1,0 +1,46 @@
+body{
+    background-color: yellow;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Add spacing between the table and the form */
+}
+.container table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.table{
+    background-color: yellow;
+}
+table, th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between form elements */
+}
+.form-container p {
+    margin: 0;
+}
+
+.mybtn{
+    background-color: rgb(235, 57, 57);
+    border-radius: 18px;
+    border: none;
+    outline: none;
+    padding: 5px 20px;
+
+}
+
+.ras{
+    width: 200px;
+    padding: 7px 30px;
+    max-width: 300px;
+   text-align: center;
+  
+}

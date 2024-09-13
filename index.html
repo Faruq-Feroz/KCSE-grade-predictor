@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KCSE Grade Calculator</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <h1 class="text-center">KCSE GRADE CALCULATOR</h1>
+    <p class="text-center">7 subject System</p>
+    <h6 class="text-center">This is a grading system that lets you calculate the marks that you get in school and what it will appear if it was KCSE. You can use it to predict your KCSE result </h6>
+    
+    <div class="container">
+        <div class="row">
+            <!-- Grade Table (left column) -->
+            <div class="col-12 col-md-6 col-sm-6">
+                <table class="table table-bordered">
+                    <tr>
+                        <th>Grade</th>
+                        <th>Scale</th>
+                    </tr>
+                    <tr>
+                        <td>A</td>
+                        <td>80-100</td>
+                    </tr>
+                    <tr>
+                        <td>A-</td>
+                        <td>75-79</td>
+                    </tr>
+                    <tr>
+                        <td>B+</td>
+                        <td>70-75</td>
+                    </tr>
+                    <tr>
+                        <td>B</td>
+                        <td>65-69</td>
+                    </tr>
+                    <tr>
+                        <td>B-</td>
+                        <td>60-64</td>
+                    </tr>
+                    <tr>
+                        <td>C+</</td>
+                        <td>55-59</td>
+                    </tr>
+                    <tr>
+                        <td>C</td>
+                        <td>50-54</td>
+                    </tr>
+                    <tr>
+                        <td>C-</td>
+                        <td>45-49</td>
+                    </tr>
+                    <tr>
+                        <td>D+</td>
+                        <td>40-44</td>
+                    </tr>
+                    <tr>
+                        <td>D</td>
+                        <td>35-39</td>
+                    </tr>
+                    <tr>
+                        <td>D-</td>
+                        <td>30-34</td>
+                    </tr>
+                    <tr>
+                        <td>E</td>
+                        <td>0-29</td>
+                    </tr>
+                </table>
+            </div>
+    
+          
+            <div class="col-12 col-md-6 col-sm-6">
+
+                <div class="d-md-flex align-items-center">
+                    <select id="Maths" class="form-control mr-2 mx-3 ras">
+                    <option value="math">Maths</option> 
+                </select>
+                
+                <!-- Input for Grades -->
+                <input type="text" id="mathinput" class="form-control mr-2 " style="width: 100px; margin-left: 39px;" placeholder="Enter value">
+                    <button id="mathsubmit" class="btn btn-primary mr-2 mybtn mx-3">Submit</button>
+                    <p class="mb-0 mx-1" style="white-space: nowrap;">Grade: <span id="mathresult"></span></p>
+                </div> <br>
+                <div class="d-md-flex align-items-center">
+                    <select id="subject" class="form-control mr-2 mx-3 ras">
+                    <option value="english">English</option>
+                </select>
+                
+                <!-- Input for Grades -->
+                <input type="text" id="englishinput" class="form-control mr-2 " style="width: 100px;margin-left: 34px;" placeholder="Enter value">
+                    <button id="englishsubmit" class="btn btn-primary mr-2 mybtn mx-3">Submit</button>
+                    <p class="mb-0 mx-1" style="white-space: nowrap;">Grade: <span id="englishresult"></span></p>
+                </div> <br>
+                <div class="d-md-flex align-items-center">
+                    <select id="subject" class="form-control mr-2 mx-3 ras">
+                    <option value="kisw">Kiswahili</option>
+                    
+                </select>
+                
+                <!-- Input for Grades -->
+                <input type="text" id="swahiliinput" class="form-control mr-2 " style="width: 100px; margin-left: 28px;" placeholder="Enter value">
+                    <button id="swahilisubmit" class="btn btn-primary mr-2 mybtn mx-3">Submit</button>
+                    <p class="mb-0 mx-1" style="white-space: nowrap;">Grade: <span id="swahiliresult"></span></p>
+                </div> <br>
+                <div class="d-md-flex align-items-center">
+                    <select id="subject" class="form-control mr-2 mx-3 ras">
+                    <option value="kisw">Chemistry</option>
+                    
+                </select>
+                
+                <!-- Input for Grades -->
+                <input type="text" id="cheminput" class="form-control mr-2 " style="width: 100px; margin-left: 20px;" placeholder="Enter value">
+                    <button id="chemsubmit" class="btn btn-primary mr-2 mybtn mx-3">Submit</button>
+                    <p class="mb-0 mx-1" style="white-space: nowrap;">Grade: <span id="chemresult"></span></p>
+                </div> <br>
+
+                
+                <div class="d-md-flex align-items-center">
+                    <select id="subject" class="form-control mr-2 mx-3 ras">
+                    <option value="biology">Biology</option>
+                    <option value="physics">Physics</option>
+                </select>
+                
+                <!-- Input for Grades -->
+                <input type="text" id="bioinput" class="form-control mr-2 " style="width: 100px; margin-left: 40px;" placeholder="Enter value">
+                    <button id="biosubmit" class="btn btn-primary mr-2 mybtn mx-3 ">Submit</button>
+                    <p class="mb-0 mx-1" style="white-space: nowrap;">Grade: <span id="bioresult"></span></p>
+                </div> <br>
+                <div class="d-md-flex align-items-center">
+                    <select id="subject" class="form-control mr-2 mx-3 ras">
+                    <option value="hist">History</option>
+                    <option value="geo">Geography</option>
+                   
+                </select>
+                
+                <!-- Input for Grades -->
+                <input type="text" id="histoinput" class="form-control mr-2" style="width: 100px;margin-left: 18px;" placeholder="Enter value">
+                    <button id="histosubmit" class="btn btn-primary mr-2 mybtn mx-3 ">Submit</button>
+                    <p class="mb-0 mx-1" style="white-space: nowrap;">Grade: <span id="historesult"></span></p>
+                </div> <br>
+                <div class="d-md-flex align-items-center">
+                    <select id="subject" class="form-control mr-2 mx-3 ras">
+                    <option value="biology">Business</option>
+                    <option value="comp">Computer</option>
+                    <option value="agri">Agriculture</option>
+                    <option value="agri">Home science</option>
+                </select>
+                
+                <!-- Input for Grades -->
+                <input type="text" id="bstinput" class="form-control mr-2 " style="width: 100px;" placeholder="Enter value">
+                    <button id="bstsubmit" class="btn btn-primary mr-2 mybtn mx-3">Submit</button>
+                    <p class="mb-0 mx-1" style="white-space: nowrap;">Grade: <span id="bstresult"></span></p>
+                </div> <br>
+                <h3 class="mx-3">Overall</h3>
+                <p class="mx-3 text-danger">(Development In progress so as to calculate each subject based on its grading system and also the Overall grade)</p>
+            </div> 
+        </div>
+    </div>
+        
+   
+                    <script src="./main.js"></script>
+</body>
+
+</html>
